@@ -1,42 +1,81 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>My Profile</title>
-    </head>
+    <html>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>My Profile</title>
+            <style>
+            body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            }
 
-    <body>
-        <div>
-            <ul>
-                <li><a href="index.html">My Profile</a></li>
-                <li><a href="shopping.html">Shopping List</a></li>
-            </ul>
-            <i>	&#9829; This is my first project to create HTML Structure 	&#9829;</i>
-        </div>
-        <br>
-        <div>
-            <table border="1">
-                <thead>
-                    <tr align="left">
-                        <th> <b>Name </b> </th>
-                        <th> <b>Last Education </b> </th>
-                        <th> <b>City </b> </th>
-                        <th> <b>Hobby </b> </th>
-                    </tr>
-                    <tr align="left">
-                        <td> Divya Andini </td>
-                        <td> State Polytechnic Of Ujung Pandang </td>
-                        <td> Makassar </td>
-                        <td> Singing and Traveling </td>
-                    </tr>
-                </thead>
-            </table>
-        </div>
-       <div>
-            <img src="img/gbr.jpeg" alt="divya" width="300" height="400">
-            <h2>find me on :</h2>
-            <a href="https://www.linkedin.com/in/divya-andini-am-6145581b8/">
-                <img src="https://1000logos.net/wp-content/uploads/2017/03/LinkedIn-icon-1.png" alt="Linkedin DIvya" width="30" height="30"> 
-            </a>
-        </div>
-    </body>
-</html>
+            .topnav {
+            overflow: hidden;
+            background-color: #333;
+            }
+
+            .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            }
+
+            .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+            }
+
+            .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+            }
+            </style>
+        </head>
+        <body>
+            <div>
+                <div class="topnav">
+                    <a class="active" href="index.html">Home</a>
+                    <a href="index.html">My Profile</a>
+                    <a href="shopping.html">Shopping List</a>
+                    <a href="form.html">Form</a>
+                </div>
+            </div>
+            <br>
+            <div>
+                <i>	&#9829; This is my first project to create HTML Structure 	&#9829;</i>
+                <table border="1">
+                    <thead>
+                        <tr align="left">
+                            <th> <b>Name </b> </th>
+                            <th> <b>Last Education </b> </th>
+                            <th> <b>City </b> </th>
+                            <th> <b>Hobby </b> </th>
+                        </tr>
+                        <tr align="left">
+                            <td> Divya Andini </td>
+                            <td> State Polytechnic Of Ujung Pandang </td>
+                            <td> Makassar </td>
+                            <td> Singing and Traveling </td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div>
+                <h4>Lets Listening to the music i hear right now</h4>
+                <audio src="multimedia/Magic Affair - In The Middle Of The Night.flac" controls loop ></audio>
+                <br>
+                <h4>And this is my Favourite Video</h4>
+                <video src="multimedia/Alchemy of Souls opening (환혼).mp4" width="400" height="300" controls></video>
+                <br>
+                <h4> And also, this is me!</h4>
+                <img src="img/gbr.jpeg" alt="divya" width="300" height="400">
+                <h2>find me on :</h2>
+                <a href="https://www.linkedin.com/in/divya-andini-am-6145581b8/">
+                    <img src="https://1000logos.net/wp-content/uploads/2017/03/LinkedIn-icon-1.png" alt="Linkedin Divya" width="30" height="30"> 
+                </a>
+            </div>
+        </body>
+    </html>
