@@ -43,11 +43,10 @@
                     <a href="form.html">Form</a>
                 </div>
             </div>
-            <div>
-                <h1>Hello my friends, let make friends with me!</h1>
-                <h2>Lets fill this form below!</h2>
-            </div>
-            <div>
+            <header>
+                <h1>Please Fill the form below!</h1>
+            </header>
+            <section>
                 <form>
                     <label for="fname">First name:</label>
                     <br>
@@ -92,16 +91,27 @@
                     <input type="number" id="age" name="age">
                     <br>
                     <br>
-                    <label for="url">Type your linkedin url:</label>
+                    <label for="img">Select Your Profile Picture:</label>
                     <br>
                     <br>
-                    <input type="url" id="url" name="url">
+                    <input type="file" id="img" name="img" accept=".jpeg">
                     <br>
                     <br>
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" formaction="table.html">
                 </form>
-            </div>
-        </body>
-    </html>
-            
-
+            </section>
+            <section>
+                <h4>Please check your data here.</h4>
+                <p> First Name : Divya</p>
+                <p> Last Name : Andini</p>
+                <p> Address : Toddopuli 4</p>
+                <p> Gender : Female</p>
+                <p> Email : divya@mail.com</p>
+                <p> Phone Number : 08987654321</p>
+                <p> Age : 2</p>
+                <p> Profile Picture : </p>
+                <figure>
+                    <img src="img/t.jpg" alt="profile" width="400" height="500">
+                    <figcaption>me.jpg</figcaption>
+                </figure>
+            </section>
