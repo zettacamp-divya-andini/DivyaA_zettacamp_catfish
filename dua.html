@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Styling</title>
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+        html, body {
+            font-family: "Montserrat", sans-serif;
+            background-color: aliceblue;
+            text-align: center;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.1rem 5rem;
+            background: linear-gradient(180deg, #6fb4fd 0%, #5caafc 100%);
+        }
+
+        .brand a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+        }
+
+        li {
+            list-style-type: none;
+            margin-left: 3rem;
+        }
+
+        li > a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+
+        li::after {
+            content: '';
+            width: 0rem;
+            height: 0.15rem;
+            background-color: #fff;
+            display: block;
+            border-radius: 0.2rem;
+            margin: 0.2rem auto 0 auto;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .first {
+            background: green;
+            color: white;
+        }
+
+        .second {
+            background: red;
+            color: white;
+        }
+
+        .third {
+            background: blue;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand"><a href="index.html">CSS</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inline Styling</a></li>
+                <li><a href="dua.html">Embedded Styling</a></li>
+                <li><a href="tiga.html">External Styling</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <table border="1">
+            <thead>
+                <th>Hobby</th>
+            </thead>
+            <tbody>
+                <tr class="first"><td>Singing</td></tr>
+                <tr><td>Reading</td></tr>
+                <tr><td>Writing</td></tr>
+                <tr><td>Traveling</td></tr>
+            </tbody>
+        </table>
+        <br>
+        <table border="1">
+            <thead><th>Favorites Movies</th></thead>
+            <tbody>
+                <tr><td>Doctor Strange</td></tr>
+                <tr class="second"><td>Narnia</td></tr>
+                <tr><td>Avatar</td></tr>
+                <tr><td>Spiderman</td></tr>
+            </tbody>
+        </table>
+        <br>
+        <table border="1">
+            <thead><th>Favorites Song</th></thead>
+            <tbody>
+                <tr><td>Asmalibrasi</td></tr>
+                <tr><td>Juara Kedua</td></tr>
+                <tr style="background-color: blue; color : white;"><td>Love Myself</td></tr>
+                <tr><td>Never Say Never</td></tr>
+            </tbody>
+        </table>
+        
+    </main>
+</body>
+</html>
