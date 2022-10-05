@@ -4,6 +4,66 @@ body {
     font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
     padding: 0;
     margin: 0;
+    text-align: justify
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1rem 5rem;
+    background: linear-gradient(180deg, #6fb4fd 0%, #5caafc 100%);
+}
+
+.brand a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 3rem;
+}
+
+li > a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+
+li::after {
+    content: '';
+    width: 0rem;
+    height: 0.15rem;
+    background-color: #fff;
+    display: block;
+    border-radius: 0.2rem;
+    margin: 0.2rem auto 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+div p {
+    font-size: 15px;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px 0 10px 0;
 }
 
 img {
@@ -32,24 +92,18 @@ img {
 }
 
 .card .content {
-    padding: .5rem;
+    padding: 5px 2px 5px 2px;
 }
 
-.card footer {
-    background-color: #333;
-    color: #fff;
-    padding: .5rem;
-}
 
-.content h3 {
-    text-align: center;
+.content > h3 {
+    text-align:center;
+    font: 15px;
     font-style: italic;
-    font-size: 15px;
     margin: 0;
 }
 
-.content p {
-    font-size: 8px;
-    font-style: italic;
-    font: times new roman;
+.content > p {
+    font-size: 9px ;
+
 }
