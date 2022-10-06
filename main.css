@@ -1,0 +1,143 @@
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    text-align: justify
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1rem 5rem;
+    background: linear-gradient(180deg, #6fb4fd 0%, #5caafc 100%);
+    position: fixed;
+    top: auto;
+    right: 0;
+    left: 0;
+}
+
+.brand a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 3rem;
+}
+
+li > a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+
+li::after {
+    content: '';
+    width: 0rem;
+    height: 0.15rem;
+    background-color: #fff;
+    display: block;
+    border-radius: 0.2rem;
+    margin: 0.2rem auto 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+div p {
+    font-size: 15px;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+img {
+    max-width: 100%; 
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 16px;
+    max-width: 800px;
+    margin-left: 270px;
+    padding-top: 70px;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: max-content 150px 1fr;
+    border: 1px solid #999;
+    border-radius: 3px;
+}
+
+.card img {
+    object-fit: cover;
+    width: 100px;
+    height: 110px;
+    margin: 10px 0 10px 80px;
+}
+
+.card .content {
+    padding: 5px 2px 5px 2px;
+}
+
+
+.content > h3 {
+    text-align:center;
+    font: 15px;
+    font-style: italic;
+    margin: 0;
+}
+
+.content > p {
+    font-size: 9px ;
+    margin: 10px 0 10px;
+
+}
+
+.content > a {
+    font-size: small ;
+    margin: 0 0 0 75px;
+
+}
+
+.button {
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: #5caafc;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0;
+    background: linear-gradient(180deg, #6fb4fd 0%, #5caafc 100%);
+
+}
